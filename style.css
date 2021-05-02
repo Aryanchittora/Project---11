@@ -1,0 +1,126 @@
+body {
+    background-size: cover;
+}
+.head {
+    width: 80%;
+    font-size: 30px !important;
+    font-family: 'Lobster Two', cursive;
+    box-shadow: 0px 0px 10px darkcyan;
+    text-shadow: 0px 0px 10px lightblue;
+    border: none;
+    color: darkcyan;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-bottom-left-radius: 19px !important;
+    border-top-right-radius: 19px !important;
+}
+@keyframes animate {
+    from {color: DARKBLUE;}
+    to {color: white;}
+    from {background-color: lightblue;}
+    to {background-color: steelblue;}
+    from {width: 70%;}
+    to {width: 80%;}
+}
+
+#status {
+    color: white;
+    background-color: darkcyan;
+    border-color: lightgreen;
+    font-family: monospace;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-shadow: 0px 0px 7px lightgreen;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+#object_no {
+    border: 5px solid darkcyan;
+    font-family: monospace;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-shadow: 0px 0px 7px lightgreen;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+#ctrl_left {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    transition: 0.9s;
+    float: left;
+    margin-top: 165px;
+    margin-left: 450px;
+}
+#ctrl_left:hover {
+    transform: scale(1.2);
+}
+.left {
+    color: darkcyan;
+    font-size: 100px;
+    text-shadow: 5px 0px 1px lightgreen;
+    animation-name: animate2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.right {
+    animation-name: animate3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate2 {
+    from {text-shadow: 5px 0px 1px lightgreen;}
+    to {text-shadow: -6px 0px 1px lightgreen;}
+}
+@keyframes animate3 {
+    from {text-shadow: -5px 0px 1px lightgreen;}
+    to {text-shadow: 6px 0px 1px lightgreen;}
+}
+
+#ctrl_right {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    transition: 0.9s;
+    float: right;
+    margin-top: 165px;
+    margin-right: 450px;
+}
+#ctrl_right:hover {
+    transform: scale(1.2);
+}
+
+canvas {
+    border: 10px solid darkcyan;
+    background-size: cover !important;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    line-height: 3;
+    background-color: lightsteelblue;
+    text-align: center;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0) 20%, rgb(0, 71, 71) 50%, rgba(0, 0, 0, 0.459) 100%);
+    color: white;
+    text-shadow: 0px 0px 4px white;
+    transition: 0.9s;
+}
+#footer:hover {
+    font-size: 20px;
+    font-family: cursive;
+}
